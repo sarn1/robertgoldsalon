@@ -5,16 +5,18 @@
 - [Download and Install NPM & Node.Js](https://nodejs.org/en/)
 https://webpack.js.org/guides/installation/
 
-```
-// local installation, first delete node_modules folder if there is content
-npm install
+https://webpack.js.org/guides/production/
 
-// try to do a npm run build, if problem do the following
-npm install --save-dev webpack
-npm install babel-core --save
-// npm: npm install webpack-cli -D
-// npm i --save-dev html-webpack-plugin
-npm install --save-dev webpack-dev-server@1.9.0
+https://github.com/volny/ES6-webpack-starter
+
+
+https://github.com/lifenautjoe/webpack-starter-basic#usage
+
+
+https://docs.npmjs.com/getting-started/fixing-npm-permissions
+
+```
+npm install node-sass
 
 ```
 ## Project ##
