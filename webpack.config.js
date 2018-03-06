@@ -64,5 +64,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig, ConcatPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
 }
