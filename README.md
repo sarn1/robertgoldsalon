@@ -7,6 +7,7 @@
 - [Starter Kit Lite](https://github.com/volny/ES6-webpack-starter)
 - [Starter Kit Adv](https://github.com/lifenautjoe/webpack-starter-basic#usage)
 - [EACCES - How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+- [Introduction to Webpack: What is Webpack? - Ep. 1](https://www.youtube.com/watch?v=aYo7YymudpE)
 
 ## Documentation ##
 ### A (very) simple starting point to use ES6 & beyond features in the browser today with Webpack and Babel. ###
