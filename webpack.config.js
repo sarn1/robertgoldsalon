@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -9,6 +10,12 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
       collapseWhitespace: true
   }
 });
+
+
+var CopyWebpackPluginConfig = new CopyWebpackPlugin([
+    { from: 'images', to: 'images/', context: 'app/' }
+])
+
 
 var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
 
@@ -39,5 +46,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
 }

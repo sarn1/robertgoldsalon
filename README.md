@@ -1,7 +1,8 @@
 # RobertGoldSalon #
-[Get Started  With Webpack](https://teamtreehouse.com/library/getting-started-with-webpack)
+- http://archive.nicinabox.com/superslides/#1
 
 ## Install ##
+- [Get Started  With Webpack](https://teamtreehouse.com/library/getting-started-with-webpack)
 - [Download and Install NPM & Node.Js](https://nodejs.org/en/)
 - [Official Webpack Installation Guide](https://webpack.js.org/guides/installation/)
 - [Starter Kit Lite](https://github.com/volny/ES6-webpack-starter)
