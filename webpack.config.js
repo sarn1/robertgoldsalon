@@ -1,6 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+// var ConcatPlugin = require('webpack-concat-plugin');
+
 
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -13,8 +15,24 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 
 var CopyWebpackPluginConfig = new CopyWebpackPlugin([
-    { from: 'images', to: 'images/', context: 'app/' }
-])
+    { from: 'images', to: 'images/', context: 'app/' },
+    { from: 'js', to: 'js/', context: 'app/' }
+]);
+
+
+// var ConcatPluginConfig = new ConcatPlugin({
+//     ...see options
+//     // examples
+//     uglify: false,
+//     sourceMap: false,
+//     name: 'result',
+//     outputPath: 'path/to/output/',
+//     fileName: '[name].[hash:8].js',
+//     filesToConcat: ['jquery', './app/js/**'],
+//     attributes: {
+//         async: true
+//     }
+// });
 
 
 var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
@@ -46,5 +64,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig, ConcatPluginConfig]
 }
