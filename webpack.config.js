@@ -4,7 +4,10 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
+  minify: {
+      collapseWhitespace: true
+  }
 });
 
 var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
