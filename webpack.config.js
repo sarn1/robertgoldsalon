@@ -20,29 +20,16 @@ var CopyWebpackPluginConfig = new CopyWebpackPlugin([
     { from: 'js', to: 'js/', context: 'app/' }
 ]);
 
-// the path(s) that should be cleaned
-var pathsToClean = [
-  'dist'
-]
-
-// the clean options to use
-var cleanOptions = {
-  verbose:  true,
-  dry:      false
-}
-
-
 // var ConcatPluginConfig = new ConcatPlugin({
-//     ...see options
 //     // examples
 //     uglify: false,
 //     sourceMap: false,
 //     name: 'result',
-//     outputPath: 'path/to/output/',
+//     outputPath: '/dist/',
 //     fileName: '[name].[hash:8].js',
-//     filesToConcat: ['jquery', './app/js/**'],
+//     filesToConcat: ['./app/js/**'],
 //     attributes: {
-//         async: true
+//         async: false
 //     }
 // });
 
@@ -76,5 +63,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [CleanWebpackPlugin(pathsToClean, cleanOptions),HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
+  plugins: [new CleanWebpackPlugin(['dist']), HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
 }

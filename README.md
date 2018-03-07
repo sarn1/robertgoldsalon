@@ -34,4 +34,4 @@ Make sure you've committed `dist/` and run `git subtree push --prefix dist origi
 If you don't want to use Github Pages add `dist/` to `.gitignore`.
 
 ## To do
-- https://github.com/johnagan/clean-webpack-plugin
+- Concat JS files.
