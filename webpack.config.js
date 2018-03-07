@@ -2,6 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 // var ConcatPlugin = require('webpack-concat-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -18,6 +19,17 @@ var CopyWebpackPluginConfig = new CopyWebpackPlugin([
     { from: 'images', to: 'images/', context: 'app/' },
     { from: 'js', to: 'js/', context: 'app/' }
 ]);
+
+// the path(s) that should be cleaned
+var pathsToClean = [
+  'dist'
+]
+
+// the clean options to use
+var cleanOptions = {
+  verbose:  true,
+  dry:      false
+}
 
 
 // var ConcatPluginConfig = new ConcatPlugin({
@@ -64,5 +76,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
+  plugins: [CleanWebpackPlugin(pathsToClean, cleanOptions),HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
 }

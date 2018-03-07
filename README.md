@@ -1,5 +1,6 @@
 # RobertGoldSalon #
 - http://archive.nicinabox.com/superslides/#1
+- Image Ratio: 1024x685
 
 ## Install ##
 - [Get Started  With Webpack](https://teamtreehouse.com/library/getting-started-with-webpack)
@@ -31,3 +32,6 @@ If you don't have webpack installed globally do so by running `npm install webpa
 After you've built site site, you can publish it to Github Pages by using a `git subtree push`.  
 Make sure you've committed `dist/` and run `git subtree push --prefix dist origin gh-pages`.  
 If you don't want to use Github Pages add `dist/` to `.gitignore`.
+
+## To do
+- https://github.com/johnagan/clean-webpack-plugin
