@@ -1,5 +1,6 @@
 # RobertGoldSalon #
 - http://archive.nicinabox.com/superslides/#1
+- https://tympanus.net/Tutorials/CSS3FullscreenSlideshow/
 - Image Ratio: 1024x685
 
 ## Install ##
