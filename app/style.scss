@@ -56,23 +56,65 @@ a{
 .container{
 	position: relative;
 	text-align: center;
+
+	header{
+		padding: 30px 20px;
+		margin: 5% 0 0 3%;
+		position: relative;
+		display: block;
+		text-align: left;
+	  background-color: #FFF;
+	  opacity: 0.7;
+	  filter: alpha(opacity=70); /* For IE8 and earlier */
+	  width: 300px;
+	  height: auto;
+		border: 2px solid #999;
+
+			img {
+				display:block;
+
+				&.logo {
+				  width: 224px;
+				  margin: auto auto 20px auto;
+				  padding-right:20px;
+				}
+
+				&.hr {
+					width: 285px;
+					margin: 10px auto;
+				}
+			}
+
+			.enter {
+				text-align:center;
+				font-size: 24px;
+				line-height: 26px;
+				padding: 10px 0;
+
+					a {
+						color:#9a7765;
+					}
+			}
+
+			ul {
+				list-style: none;
+			  margin: 20px auto 0 auto;
+			  display:block;
+			  width: 170px;
+
+				li {
+					display:-moz-inline-stack;
+				  display:inline-block;
+				  zoom:1;
+				  *display:inline;
+				  margin: auto 3px;
+				}
+			}
+		}
 }
+
 .clr{
 	clear: both;
-}
-.container > header{
-	padding: 30px 30px 10px 20px;
-	margin: 0px 20px 10px 20px;
-	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  text-align: left;
-  background-color: #FFF;
-  border: 5px solid #000;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-  width: 300px;
-  height: 300px;  
 }
 
 .cb-slideshow,
