@@ -53,6 +53,7 @@ body{
 a{
 	text-decoration: none;
 }
+
 .container{
 	position: relative;
 	text-align: center;
@@ -112,6 +113,47 @@ a{
 			}
 		}
 }
+
+.container_bar {
+    background: rgba(153, 153, 153, 0.5);
+    position: relative;
+    margin-top: 40%;
+
+		.logo {
+		    margin-left: 10%;
+		    margin-right: 50px;
+		    padding-top: 20px;
+		    display: inline-block;
+		    *display: inline;
+		    zoom: 1;
+		}
+
+		.enter {
+		    border: thin solid #9a7765;
+		    width: 100px;
+		    text-align: center;
+		    padding: 5px 10px;
+		    display: inline-block;
+		    *display: inline;
+		    zoom: 1;
+		    top: 75px;
+		    position: absolute;
+
+				&:hover {
+				    background-color: #9a7765;
+				    border: thin solid #fdf6eb;
+
+						a {
+							color: #fdf6eb;
+						}
+				}
+
+				a {
+					color: #9a7765;
+				}
+		}
+}
+
 
 .clr{
 	clear: both;

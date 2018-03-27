@@ -14,6 +14,14 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   }
 });
 
+var HtmlWebpackPluginConfig2 = new HtmlWebpackPlugin({
+  template: __dirname + '/app/index-type2.html',
+  filename: 'index-type2.html',
+  inject: 'body',
+  minify: {
+      collapseWhitespace: true
+  }
+});
 
 var CopyWebpackPluginConfig = new CopyWebpackPlugin([
     { from: 'images', to: 'images/', context: 'app/' },
@@ -63,5 +71,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CleanWebpackPlugin(['dist']), HtmlWebpackPluginConfig, ExtractTextPluginConfig, CopyWebpackPluginConfig]
+  plugins: [new CleanWebpackPlugin(['dist']), HtmlWebpackPluginConfig, HtmlWebpackPluginConfig2, ExtractTextPluginConfig, CopyWebpackPluginConfig]
 }
