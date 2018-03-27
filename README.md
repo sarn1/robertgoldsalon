@@ -1,6 +1,7 @@
-# RobertGoldSalon #
+# Robert Gold Salon Splash Page #
 - https://tympanus.net/Tutorials/CSS3FullscreenSlideshow/
 - Image Ratio: 1024x683
+- Experiment with Webpack
 
 ## Install ##
 - [Get Started  With Webpack](https://teamtreehouse.com/library/getting-started-with-webpack)
