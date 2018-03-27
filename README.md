@@ -3,6 +3,12 @@
 - Image Ratio: 1024x683
 - Experiment with Webpack
 
+** Type 1 **
+![type 1](https://github.com/sarn1/robertgoldsalon/blob/master/extras/type1.jpg)
+
+** Type 2 **
+![type 1](https://github.com/sarn1/robertgoldsalon/blob/master/extras/type2.jpg)
+
 ## Install ##
 - [Get Started  With Webpack](https://teamtreehouse.com/library/getting-started-with-webpack)
 - [Download and Install NPM & Node.Js](https://nodejs.org/en/)
